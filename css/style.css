@@ -54,13 +54,20 @@ img {
     padding: 1.5rem 5rem;
     cursor: pointer;
     margin-top: 2rem;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.header-button:hover {
+	box-shadow: none;
 }
 
 small {
     display: block;
     font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-left: 5.5rem;
 }
 
@@ -195,8 +202,17 @@ small {
     font-weight: 400;
     padding: 1rem 3.5rem;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
 }
 
+.footer-btn:hover {
+	background-color: #fff;
+    color: #3a7dfd;
+}
+
+/* Adaptiv */
 @media (max-width: 1200px) {
     .header-pretitle {
         margin-top: 6rem;

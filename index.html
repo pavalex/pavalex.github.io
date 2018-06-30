@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Подключаем наш файл со стилями, который находится в папке css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,15 +28,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <img src="img/main-img.png" alt="logo" class="header-logo">
+                    <img src="img/main-img.png" alt="logo" class="header-logo wow fadeInLeftBig">
                 </div>
                 <div class="col-lg-5">
-                    <p class="header-pretitle">Веб-разработчик</p>
-                    <h1 class="header-title">Александр Павлов</h1>
-                    <p class="header-subtitle">Верстка на HTML/CSS
+                    <p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+                    <h1 class="header-title wow fadeInRightBig" wow fadeInRightBig" data-wow-delay="0.2s">Александр Павлов</h1>
+                    <p class="header-subtitle wow fadeInRightBig" wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS
                         <br> Разработка сайтов под ключ</p>
-                    <a href="https://vk.me/id213227944" target="_blank" class="header-button">Связаться</a>
-                    <small>*Это бесплатно</small>
+                    <a href="https://vk.me/id213227944" target="_blank" class="header-button wow fadeInRightBig" wow fadeInRightBig" data-wow-delay="0.4s">Связаться</a>
+                    <small class="wow fadeInRightBig" wow fadeInRightBig" data-wow-delay="0.4s">*Это бесплатно</small>
                 </div>
             </div>
         </div>
@@ -48,7 +50,7 @@
                 <p class="portfolio-description">Мои работы</p>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="portfolio-works portfolio-works-left">
+                        <div class="portfolio-works portfolio-works-left  wow pulse" data-wow-delay="0.1s">
                             <img src="img/portfolio-img-1.jpg" alt="gazprom">
                             <h3 class="portfolio-works-title">внутренний университет «Газпром нефти»</h3>
                             <p class="portfolio-works-description">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
@@ -56,7 +58,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="portfolio-works portfolio-works-right">
+                        <div class="portfolio-works portfolio-works-right  wow pulse" data-wow-delay="0.2s">
                             <img src="img/portfolio-img-2.jpg" alt="Mir">
                             <h3 class="portfolio-works-title">Сайт платежной системы «Мир»</h3>
                             <p class="portfolio-works-description">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
@@ -65,8 +67,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /.portfolio-wrapper -->
+            <!-- /.portfolio-wrapper -->
+        </div>        
     </section>
     <!-- /.portfolio -->
     <footer class="footer">
@@ -81,10 +83,10 @@
                 <div class="col-md-4">
                 	<div class="footer-middle">
                 		<p class="footer-subscription">Подпишитесь:</p>
-                		<a href="#" class="footer-socials"><img src="img/socials/facebook-logo-button.png" alt="facebook"></a>
-                		<a href="https://vk.com/id213227944" target="_blank" class="footer-socials"><img src="img/socials/vk-social-logotype.png" alt="vk"></a>
-                		<a href="#" class="footer-socials"><img src="img/socials/telegram-symbol.png" alt="telegram"></a>
-                		<a href="#" class="footer-socials"><img src="img/socials/youtube-symbol.png" alt="youtube"></a>
+                		<a href="#" class="footer-socials"><img src="img/socials/facebook-logo-button.png" alt="facebook" class="wow rotateIn" data-wow-delay="0.1s"></a>
+                		<a href="https://vk.com/id213227944" target="_blank" class="footer-socials"><img src="img/socials/vk-social-logotype.png" alt="vk" class="wow rotateIn" data-wow-delay="0.2s"></a>
+                		<a href="#" class="footer-socials"><img src="img/socials/telegram-symbol.png" alt="telegram" class="wow rotateIn" data-wow-delay="0.3s"></a>
+                		<a href="#" class="footer-socials"><img src="img/socials/youtube-symbol.png" alt="youtube" class="wow rotateIn" data-wow-delay="0.4s"></a>
                 	</div>
                 </div>
                 <div class="col-md-4">
@@ -99,6 +101,10 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 </body>
 
 </html>
